@@ -8,6 +8,8 @@ import Contact from './pages/Contact/Contact'
 import Gallery from './pages/Gallery/Gallery'
 import Service from './pages/Service/Service'
 import Shop from './pages/Shop/Shop'
+import linkPage from './utils/linkPage';
+
 
 Header ();
 Footer ();
@@ -32,6 +34,23 @@ linkPage("#shop-link", Shop);
 //document.querySelector("#home-link").addEventListener("click", Home);
 
 
+
+
+  //Recuperamos el botón
+const themeBtn = document.querySelector("#theme-btn");
+
+themeBtn.addEventListener("click", () => {
+  //Cada vez que hacemos click alternamos la clase dark, si no la tiene el body la pone y si la tiene la quita
+  document.body.classList.toggle("dark");
+  //Y además, comprobaremos que si contiene la clase dark que sustituya el texto por un sol y si no por una luna
+  if (document.body.classList.contains("dark")) {
+    themeBtn.innerHTML = "🌞";
+  } else {
+    themeBtn.innerHTML = "🌙";
+  }
+});
+
+
 //Vamos a añadirle un evento al botón del tema
 /*document.querySelector("#theme-btn").addEventListener("click", () => {
     //Vamos a recuperar el botón
@@ -54,17 +73,3 @@ linkPage("#shop-link", Shop);
     document.querySelector("#theme-btn").innerHTML = "☼";
     document.body.classList.add("dark");
   }*/
-
-  //Recuperamos el botón
-const themeBtn = document.querySelector("#theme-btn");
-
-themeBtn.addEventListener("click", () => {
-  //Cada vez que hacemos click alternamos la clase dark, si no la tiene el body la pone y si la tiene la quita
-  document.body.classList.toggle("dark");
-  //Y además, comprobaremos que si contiene la clase dark que sustituya el texto por un sol y si no por una luna
-  if (document.body.classList.contains("dark")) {
-    themeBtn.innerHTML = "🌞";
-  } else {
-    themeBtn.innerHTML = "🌙";
-  }
-});
