@@ -34,6 +34,17 @@ linkPage("#shop-link", Shop);
 //document.querySelector("#home-link").addEventListener("click", Home);
 
 
+//menú hamburguesa
+/*const nav =document.querySelector('#nav');
+const abrir = document.querySelector('#abrir');
+const cerrar = document.querySelector('#cerrar');
+
+abrir.addEventListener('click', ()=> {
+  nav.classList.add('visible');
+})*/
+
+
+
 
 
   //Recuperamos el botón

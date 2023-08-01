@@ -2,9 +2,11 @@ import "./Header.css";
 
 const template = () => {
     return `    
+    
 <nav id='navSecundario'>   
 
 <button id="theme-btn">🌙</button> 
+<img src="icons/logo.png" alt="Logo" class='logoNav1'>
 
 <div id="secundario">
   <ul id='ulSecundario'>
@@ -64,7 +66,7 @@ const template = () => {
 
 
    <div id="Primero">
-   <ul id='ulPrimario'>
+   <ul id='ulPrimario2'>
 
    <li>
    <a href="#null" id="gallery-link">Gallery</a>
@@ -84,6 +86,47 @@ const template = () => {
   </div>
 
    </nav>
+
+
+
+
+   <button class='abrirMenu' id='abrir'>'abrir'</button>
+   <nav class='navMedia visible' id='nav'>
+
+   <button class='cerrarMenu' id='cerrar'>cerrar</button>
+
+   <ul class='ulMedia'>
+
+   <li>
+   <a href="#null" id="home-link">Home</a>
+   </li>
+
+   <li>
+   <a href="#null" id="about-link">About us</a>
+   </li>
+
+   <li>
+   <a href="#null" id="contact-link">Contact</a>
+   </li>
+
+  <li>
+  <a href="#null" id="gallery-link">Gallery</a>
+  </li>
+
+  <li>
+  <a href="#null" id="service-link">Service</a>
+  </li>
+
+  <li>
+  <a href="#null" id="shop-link">Shop</a>
+  </li>
+
+  <li>
+  <a href="#null" id="api-link">Api</a>
+  </li>
+
+  </nav>
+
     `;
   };
 
