@@ -1,0 +1,51 @@
+
+
+#navSecundario {
+    background-color: whitesmoke;
+    height: 5vh;  
+    width: auto;
+    display:flex;
+    align-items: center;
+    justify-content: right;
+    padding: 50px;
+    gap: 20px;
+  }
+
+  #secundario{
+    height: 2vh;
+  }
+
+  #bot{
+    height: 2vh;
+ 
+  }
+
+
+  header ul{
+    display:flex;  
+    flex-wrap: wrap;  
+    gap: 20px;
+  
+  }
+
+#navPrimario{
+    height: 12vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+  }
+ 
+
+
+#ulSecundario li img{
+    height: 20px;
+    width: auto;
+}
+
+
+.logo{
+    height: 50px;
+    width: auto;
+}
