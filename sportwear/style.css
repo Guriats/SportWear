@@ -6,6 +6,14 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,3 +48,11 @@ main{
   align-items: center;
   gap: 20px
 }
+
+.dark {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+
+

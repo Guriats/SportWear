@@ -2,7 +2,10 @@ import "./Header.css";
 
 const template = () => {
     return `    
-<nav id='navSecundario'>     
+<nav id='navSecundario'>   
+
+<button id="theme-btn">🌙</button> 
+
 <div id="secundario">
   <ul id='ulSecundario'>
 
@@ -83,6 +86,7 @@ const template = () => {
    </nav>
     `;
   };
+
 
 
   const Header = () => {
