@@ -1,10 +1,35 @@
 import './style.css'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer';
+import About from './pages/About/About'
+import Api from './pages/Api/Api'
+import Home from './pages/Home/Home'
+import Contact from './pages/Contact/Contact'
+import Gallery from './pages/Gallery/Gallery'
+import Service from './pages/Service/Service'
+import Shop from './pages/Shop/Shop'
 
 Header ();
 Footer ();
+About ();
+Home ();
+Api ();
+Contact ();
+Gallery ();
+Service ();
+Shop ();
 
+
+
+linkPage("#about-link", About);
+linkPage("#home-link", Home);
+linkPage("#api-link", Api);
+linkPage("#contact-link", Contact);
+linkPage("#gallery-link", Gallery);
+linkPage("#service-link", Service);
+linkPage("#shop-link", Shop);
+
+//document.querySelector("#home-link").addEventListener("click", Home);
 
 
 //Vamos a añadirle un evento al botón del tema
