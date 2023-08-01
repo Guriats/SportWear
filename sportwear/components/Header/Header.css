@@ -29,6 +29,7 @@
   }
 
 #navPrimario{
+  background-color: rgb(176, 176, 176);
     height: 12vh;
     display:flex;
     align-items: center;
