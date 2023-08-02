@@ -90,8 +90,10 @@ const template = () => {
 
 
 
-   <button class='abrirMenu' id='abrir'>'abrir'</button>
-   <nav class='navMedia visible' id='nav'>
+   <button class='abrirMenu' id='abrir'>
+   <img src="icons/hamburguesa.png" alt="Abre menu">
+   </button>
+   <nav class='navMedia' id='nav'>
 
    <button class='cerrarMenu' id='cerrar'>cerrar</button>
 
@@ -127,13 +129,29 @@ const template = () => {
 
   </nav>
 
+
     `;
   };
 
 
+const botonAbrir = document.querySelector('.abrirMenu'); 
+const menu = document.querySelector('.ulMedia');
 
-  const Header = () => {
+const toggleMenu = () => {
+  menu.classList.toggle('visible');
+}
+
+botonAbrir.addEventListener('click', toggleMenu);
+
+
+
+
+
+
+ const Header = () => {
     document.querySelector("header").innerHTML = template();
   };
+
+
 
   export default Header;

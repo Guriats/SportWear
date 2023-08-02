@@ -77,8 +77,16 @@
 }
 
 @media screen and (max-width: 650px){
+
+  .ulMedia {
+    display: none; 
+  }
+  
+  .ulMedia.visible {
+    display: flex;
+  }
  
-  #secundario{
+  #navSecundario{
     display: none;
   }
 
@@ -99,10 +107,10 @@
   display: none;
 }
 
-.navMedia{
+/*.navMedia{
   opacity: 0;
   visibility: hidden;
-}
+}*/
 
  .navMedia{
   display: flex;
@@ -118,7 +126,6 @@
  }
 
  .navMedia .visible{
-  display: flex;
   opacity: 1;
   visibility: visible;
  }
@@ -131,5 +138,12 @@
 
  .ulMedia li a{
   color: rgb(82, 82, 82);
+ }
+ button img{
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  margin: 20px;
  }
 }
