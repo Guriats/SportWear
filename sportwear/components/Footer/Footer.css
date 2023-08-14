@@ -1,3 +1,10 @@
 footer{  
-    height: 12vh;
+    height: 8vh;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+align-items: center;
+ 
 }

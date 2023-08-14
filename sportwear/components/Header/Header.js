@@ -1,11 +1,12 @@
 import "./Header.css";
 
+
 const template = () => {
     return `    
     
 <nav id='navSecundario'>   
 
-<button id="theme-btn">🌙</button> 
+<button id="theme-btn">☽</button> 
 <img src="icons/logo.png" alt="Logo" class='logoNav1'>
 
 <div id="secundario">
@@ -90,60 +91,32 @@ const template = () => {
 
 
 
-   <button class='abrirMenu' id='abrir'>
-   <img src="icons/hamburguesa.png" alt="Abre menu">
-   </button>
-   <nav class='navMedia' id='nav'>
+   
 
-   <button class='cerrarMenu' id='cerrar'>cerrar</button>
+  <nav id="hamnav">
 
-   <ul class='ulMedia'>
 
-   <li>
-   <a href="#null" id="home-link">Home</a>
-   </li>
-
-   <li>
-   <a href="#null" id="about-link">About us</a>
-   </li>
-
-   <li>
-   <a href="#null" id="contact-link">Contact</a>
-   </li>
-
-  <li>
-  <a href="#null" id="gallery-link">Gallery</a>
-  </li>
-
-  <li>
-  <a href="#null" id="service-link">Service</a>
-  </li>
-
-  <li>
-  <a href="#null" id="shop-link">Shop</a>
-  </li>
-
-  <li>
-  <a href="#null" id="api-link">Api</a>
-  </li>
-
+  <img src="icons/logo.png" alt="Logo" class='logoNav1'>
+  <label for="hamburger">&#9776;</label>
+  <input type="checkbox" id="hamburger"/>
+  
+  
+  <div id="hamitems">
+  
+  <a href="#null" id="hamhome-link">Home</a>
+  <a href="#null" id="hamabout-link">About us</a>
+  <a href="#null" id="hamcontact-link">Contact</a>
+  <a href="#null" id="hamgallery-link">Gallery</a>
+  <a href="#null" id="hamservice-link">Service</a>
+  <a href="#null" id="hamshop-link">Shop</a>
+  <a href="#null" id="hamapi-link">Api</a>
+  
+  </div>
   </nav>
 
 
     `;
   };
-
-
-const botonAbrir = document.querySelector('.abrirMenu'); 
-const menu = document.querySelector('.ulMedia');
-
-const toggleMenu = () => {
-  menu.classList.toggle('visible');
-}
-
-botonAbrir.addEventListener('click', toggleMenu);
-
-
 
 
 
@@ -152,6 +125,7 @@ botonAbrir.addEventListener('click', toggleMenu);
     document.querySelector("header").innerHTML = template();
   };
 
-
-
   export default Header;
+
+
+ 

@@ -1,0 +1,132 @@
+.background {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.portadaHome {
+  height: 200px;
+  width: 400px;
+  border: 2px solid rgba(251, 197, 59, 0.321);
+  justify-content: left;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-left: 250px;
+}
+
+.containerHome{
+  margin-left: 250px;
+}
+
+.collapsible{
+  max-width: 450px;
+  overflow: hidden;
+  font-weight: 500;
+  margin-left: 250px;
+}
+
+.collapsible input{
+  display: none;
+}
+
+.collapsible label{
+  position: relative;
+  font-weight: 600;
+  background: #fff;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+  color:#1c1c6b;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.collapsible label:after{
+  content:'';
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 18px;
+  height: 18px;
+  background: url(/public/icons/flecha.png) no-repeat 0 0;
+  transition: all 0.3s ease;
+}
+
+.collapsible input:checked + :after{
+  transform: rotate(90deg);
+}
+
+.collapsible-text{
+  max-height: 1px;
+  overflow: hidden;
+  border-radius: 4px;
+  line-height: 1.4;
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  overflow-y: scroll;
+}
+
+.collapsible input:checked ~ .collapsible-text {
+  max-height: 300px;
+  padding-bottom: 25px;
+  background: #fff;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+  opacity: 1;
+  top: 0;
+}
+
+.collapsible-text h2{
+  margin-bottom: 10px;
+  padding: 15px 15px 0;
+  color: #1c1c6b
+}
+
+.collapsible-text p{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 650px){
+    .portadaHome{
+        display: none;
+    }
+
+
+    .portadaHome {
+        height: 200px;
+        width: 200px;
+        border: 2px solid rgba(251, 197, 59, 0.321);
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        overflow: hidden;
+        overflow-y: scroll;
+        margin-right: 200px;
+     
+      }
+
+      .collapsible{
+        max-width: 450px;
+        overflow: hidden;
+        font-weight: 500;
+        margin-right: 150px;
+        margin-left: 50px;
+      }
+
+      
+
+}
+

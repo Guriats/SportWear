@@ -1,7 +1,7 @@
 
 
 #navSecundario {
-    background-color: whitesmoke;
+   
     height: 5vh;  
     width: auto;
     display:flex;
@@ -13,12 +13,6 @@
   #secundario{
     height: 2vh;
   }
-
-  #bot{
-    height: 2vh;
- 
-  }
-
 
   header ul{
     display:flex;  
@@ -33,7 +27,6 @@
     display:flex;
     align-items: center;
     justify-content: center;
-  
     gap: 20px;
   }
  
@@ -64,38 +57,23 @@
   width: auto;
 }
 
-.abrirMenu{
-  display: none;
-}
-
-.cerrarMenu{
-  display: none;
-}
-
-.navMedia{
+#hamnav{
   display: none;
 }
 
 @media screen and (max-width: 650px){
 
-  .ulMedia {
-    display: none; 
+  #hamnav{
+    display: block;
   }
-  
-  .ulMedia.visible {
-    display: flex;
-  }
+
+#hamburger{
+  visibility: hidden;
+}
+
  
   #navSecundario{
     display: none;
-  }
-
-#bot{
-  display: none;
-}
-
-  .abrirMenu, .cerrarMenu {
-    display: block;
   }
 
   .logoNav1{
@@ -107,43 +85,46 @@
   display: none;
 }
 
-/*.navMedia{
-  opacity: 0;
-  visibility: hidden;
-}*/
-
- .navMedia{
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  gap: 1rem;
+.logoNav1 {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: whitesmoke;
-  padding: 2rem;
- }
-
- .navMedia .visible{
-  opacity: 1;
-  visibility: visible;
- }
-
- .ulMedia{
-  display: flex;
-  flex-direction: column;
-  align-items: end;
- }
-
- .ulMedia li a{
-  color: rgb(82, 82, 82);
- }
- button img{
-  height: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: right;
-  margin: 20px;
- }
+  right: 50%;
+  top: 3%;
 }
+
+#hamitems{
+  display: block;
+ text-align: center;
+ padding: 5px;
+}
+
+#hamitems a{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #333;
+padding-bottom: 5px;
+
+}
+
+#hamnav label {
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  background: #959494;
+  font-size: 1.2rem;
+  font-style: normal;
+  padding: 10px
+}
+
+#hamnav label {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+#hamitems{
+  display: none;
+}
+
+#hamnav input:checked ~ #hamitems {display: block;}
+
+

@@ -40,7 +40,7 @@ li {
 }
 
 main{
-  height: 71vh;
+  height: 75vh;
  
   display:flex;
   flex-direction: column;
@@ -49,10 +49,15 @@ main{
   gap: 20px
 }
 
+/*Modo oscuro*/
+
 .dark {
   background-color: var(--primary);
   color: var(--secondary);
+  
 }
+
+
 
 
 

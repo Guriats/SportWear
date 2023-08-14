@@ -11,15 +11,17 @@ import Shop from './pages/Shop/Shop'
 import linkPage from './utils/linkPage';
 
 
+
 Header ();
 Footer ();
 About ();
-Home ();
 Api ();
 Contact ();
 Gallery ();
 Service ();
 Shop ();
+Home ();
+
 
 
 
@@ -30,6 +32,15 @@ linkPage("#contact-link", Contact);
 linkPage("#gallery-link", Gallery);
 linkPage("#service-link", Service);
 linkPage("#shop-link", Shop);
+
+linkPage("#hamabout-link", About);
+linkPage("#hamhome-link", Home);
+linkPage("#hamapi-link", Api);
+linkPage("#hamcontact-link", Contact);
+linkPage("#hamgallery-link", Gallery);
+linkPage("#hamservice-link", Service);
+linkPage("#hamshop-link", Shop);
+
 
 //document.querySelector("#home-link").addEventListener("click", Home);
 
@@ -46,7 +57,7 @@ abrir.addEventListener('click', ()=> {
 
 
 
-
+//Modo oscuro
   //Recuperamos el botón
 const themeBtn = document.querySelector("#theme-btn");
 
@@ -55,9 +66,9 @@ themeBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   //Y además, comprobaremos que si contiene la clase dark que sustituya el texto por un sol y si no por una luna
   if (document.body.classList.contains("dark")) {
-    themeBtn.innerHTML = "🌞";
+    themeBtn.innerHTML = "☼";
   } else {
-    themeBtn.innerHTML = "🌙";
+    themeBtn.innerHTML = "☽";
   }
 });
 
