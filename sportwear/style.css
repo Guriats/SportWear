@@ -21,6 +21,7 @@ a:hover {
 }
 
 body {
+
   background-color: var(--secondary);
   color: var(--primary);
 }
@@ -39,9 +40,11 @@ li {
   list-style-type: none;
 }
 
+
 main{
   height: 75vh;
- 
+  overflow-y:scroll;
+  overflow-x: hidden;
   display:flex;
   flex-direction: column;
   justify-content: center;
