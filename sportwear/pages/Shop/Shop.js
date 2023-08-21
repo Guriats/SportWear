@@ -4,8 +4,11 @@ import {camisetas} from "../../data/data";
 
 const template = () => {
   return `
-  <h2>SHOP</h2>
+<div id="caja-texto">
+  <h2 const="altura">SHOP</h2>
   <p>Contenido Tienda</p>
+</div>
+
    <ul id="camisetas-container"></ul>
   `;
 };
